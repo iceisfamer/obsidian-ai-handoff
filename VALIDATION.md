@@ -35,7 +35,7 @@ Windows, Linux, mobile, Intel Macs, detached-window behavior, and third-party th
 - Private vaults, `.dev`, installation backups, saved chats, authorization codes, machine-specific paths, and node_modules are excluded.
 - The source ZIP was extracted into an isolated temporary directory, installed from the locked dependency cache, and passed the full release pipeline. Rebuilt runtime assets and ZIPs had identical SHA-256 hashes.
 - Release hashes are in `SHA256SUMS.txt`. The separate `main.js`, `manifest.json`, and `styles.css` assets are prepared for GitHub Release.
-- GitHub CI validates each published commit. The macOS beta release and its assets are published separately from Community directory acceptance; repository and release status can be verified on GitHub. A directory listing is not implied by this validation report.
+- GitHub CI runs the portable lint, typecheck, mock-client/DOM tests, and build on Ubuntu with Node.js 24; native macOS acceptance is performed separately. The macOS beta release and its assets are published separately from Community directory acceptance; repository and release status can be verified on GitHub. A directory listing is not implied by this validation report.
 
 ## Manual acceptance before promotion
 
