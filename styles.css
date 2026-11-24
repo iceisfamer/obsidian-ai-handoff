@@ -1,0 +1,32 @@
+.ai-chat { display:flex; flex-direction:column; height:100%; padding:0!important; overflow:hidden!important; min-width:240px; }
+.ai-chat-header { display:flex; align-items:center; justify-content:space-between; padding:14px 16px 10px; gap:12px; flex-shrink:0; }
+.ai-chat-brand { font-size:var(--font-ui-medium); font-weight:650; }
+.ai-chat-context { margin:0 12px 10px; padding:10px 12px; background:var(--background-secondary); border:1px solid var(--background-modifier-border); border-radius:10px; flex-shrink:0; }
+.ai-chat-title { font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.ai-chat-meta { color:var(--text-muted); font-size:var(--font-ui-smaller); margin-top:5px; }
+.ai-chat-messages { flex:1; min-height:0; overflow:auto; padding:8px 16px 18px; overscroll-behavior:contain; }
+.ai-chat-empty { color:var(--text-muted); padding:28px 0; line-height:1.7; }
+.ai-chat-empty h3 { font-size:1.05em; color:var(--text-normal); margin:0 0 10px; }
+.ai-chat-empty button { display:block; white-space:normal; height:auto; padding:9px 11px; margin-top:12px; text-align:left; width:100%; }
+.ai-chat-message { margin:0 0 22px; overflow-wrap:anywhere; }
+.ai-chat-role { font-size:var(--font-ui-smaller); color:var(--text-muted); font-weight:600; margin-bottom:7px; }
+.ai-chat-body { font-size:var(--font-ui-medium); line-height:1.65; white-space:pre-wrap; }
+.ai-chat-body:has(p) { white-space:normal; }
+.ai-chat-body p:first-child { margin-top:0; }
+.ai-chat-body p:last-child { margin-bottom:0; }
+.ai-chat-body pre { overflow:auto; }
+.ai-chat-body table { display:block; max-width:100%; overflow:auto; }
+.ai-chat-message.is-user .ai-chat-body { background:var(--background-secondary); border-radius:10px; padding:10px 12px; }
+.ai-chat-sent-quote { white-space:pre-wrap; max-height:120px; overflow:auto; font-size:var(--font-ui-small); color:var(--text-muted); margin:0 0 8px; padding:4px 10px; border-left:2px solid var(--interactive-accent); }
+.ai-chat-composer { flex-shrink:0; border-top:1px solid var(--background-modifier-border); padding:12px; background:var(--background-primary); }
+.ai-chat-quote { border-left:3px solid var(--interactive-accent); background:var(--background-secondary); padding:8px 10px; margin-bottom:10px; border-radius:4px 8px 8px 4px; }
+.ai-chat-quote.is-empty { display:none; }
+.ai-chat-quote-heading { display:flex; justify-content:space-between; align-items:center; font-size:var(--font-ui-smaller); color:var(--text-muted); gap:8px; }
+.ai-chat-quote-text { margin-top:5px; max-height:110px; overflow:auto; white-space:pre-wrap; font-size:var(--font-ui-small); line-height:1.5; overflow-wrap:anywhere; }
+.ai-chat-input { width:100%; resize:vertical; min-height:76px; max-height:220px; line-height:1.5; padding:10px!important; }
+.ai-chat-footer { display:flex; justify-content:space-between; align-items:center; margin-top:8px; gap:8px; }
+.ai-chat-status { color:var(--text-muted); font-size:11px; line-height:1.5; }
+.ai-chat-message-state { color:var(--text-muted); font-size:var(--font-ui-smaller); margin-top:8px; }
+.ai-chat button:focus-visible, .ai-chat textarea:focus-visible { outline:2px solid var(--interactive-accent); outline-offset:2px; }
+/* Obsidian's floating status bar overlaps the lower-right sidebar. */
+.ai-chat-composer { padding-bottom:calc(12px + var(--status-bar-height, 24px)); }

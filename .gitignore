@@ -1,0 +1,11 @@
+node_modules/
+.dev/
+test-vault/
+installation-backups/
+dist/
+*.zip
+SHA256SUMS*.txt
+main.js
+data.json
+runtime/
+.DS_Store

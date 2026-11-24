@@ -1,0 +1,9 @@
+{
+  "id": "ai-handoff",
+  "name": "AI Handoff",
+  "version": "0.3.0",
+  "minAppVersion": "1.15.1",
+  "description": "Discuss notes with Codex or Gemini in a sidebar, with full-note context, selected-text quotes, and follow-up questions on macOS.",
+  "author": "cybrea",
+  "isDesktopOnly": true
+}
